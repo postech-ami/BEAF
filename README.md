@@ -6,7 +6,7 @@ Authors: [Moon Ye-Bin*](https://sites.google.com/g.postech.edu/moon-ye-bin), [Na
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-        <image src="/teaser.gif" autoplay loop muted playsinline></image>
+        <image style="width: 80%" src="/teaser.gif" autoplay loop muted playsinline></image>
     </div>
   </div>
 </section>
