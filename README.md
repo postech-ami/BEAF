@@ -52,7 +52,7 @@ python src/main.py --dataset cifar100-lt --data_dir data/cifar100/ --root_dir ex
 ## Citation
 If you find our code or paper helps, please consider citing:
 ````BibTeX
-@inproceedings{yebin2023beaf,
+@inproceedings{yebin2024beaf,
   title     = {BEAF: Observing BEfore-AFter Changes to Evaluate Hallucination in Vision-language Models},
   author    = {Ye-Bin, Moon and Hyeon-Woo, Nam and Choi, Wonseok and Oh, Tae-Hyun},
   booktitle = {European Conference on Computer Vision (ECCV)},
