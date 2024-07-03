@@ -4,7 +4,7 @@ Authors: [Moon Ye-Bin*](https://sites.google.com/g.postech.edu/moon-ye-bin), [Na
 ### [Project Page](https://beafbench.github.io/)
 
 <p align="center">
-  <img style="width: 80%" src="/teaser.gif" autoplay loop muted playsinline>
+  <img style="width: 80%" src="/teaser_out.gif" autoplay loop muted playsinline>
 </p>
 
 This repository is official implementation for the ECCV 2024 paper, [BEAF](). 
