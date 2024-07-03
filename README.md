@@ -3,11 +3,17 @@ Authors: [Moon Ye-Bin*](https://sites.google.com/g.postech.edu/moon-ye-bin), [Na
 
 ### [Project Page](https://beafbench.github.io/)
 
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+        <video src="/teaser.mov" autoplay loop muted playsinline></video>
+    </div>
+  </div>
+</section>
+
 This repository is official implementation for the ECCV 2024 paper, [BEAF](). 
-TextManiA augments the target visual feature by leveraging text embedding of the visually mimetic words (i.e., attributes), which are comprehensible and semantically rich. 
-<p align="center">
-    <video src="/teaser.mov" autoplay loop muted playsinline></video>
-</p>
+The key idea of our BEAF benchmark is manipulating visual scene information and designing the metrics based on the model's answer changes along the scene changes.
+
 <br>
 
 > **Abstract:** *Large vision language models (LVLMs) perceive the world through a combination of a visual encoder and large language models (LLMs). The visual encoder, pre-trained on large-scale vision-text datasets, provides zero-shot generalization to visual data, and LLMs endow the high reasoning ability to LVLMs. It leads LVLMs to achieve high performance on wide benchmarks without fine-tuning, known as zero or few-shot capability of LLMs. However, recent studies show that LVLMs are vulnerable to hallucination. This undesirable behavior degrades reliability and credibility, thereby making users unable to fully trust the output from LVLMs. To enhance trustworthiness and better tackle the hallucination of LVLMs, we curate a new evaluation dataset, called the BEfore-AFter hallucination dataset (BEAF), and introduce new metrics: True Understanding (TU), IGnorance (IG), StuBbornness (SB), and InDecision (ID). Unlike prior works that focus only on constructing questions and answers, the key idea of our benchmark is that we manipulate visual scene information by image editing models and design the metrics based on scene changes. This allows us to clearly assess whether LVLMs correctly understand a given scene by observing the ability to perceive changes. We also visualize the correctness heatmap by virtue of our two-axis view: vision and text. Upon evaluating LVLMs with our dataset, we observed that our metrics can reveal different aspects of LVLM hallucination.*
