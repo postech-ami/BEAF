@@ -3,13 +3,9 @@ Authors: [Moon Ye-Bin*](https://sites.google.com/g.postech.edu/moon-ye-bin), [Na
 
 ### [Project Page](https://beafbench.github.io/)
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-        <image style="width: 80%" src="/teaser.gif" autoplay loop muted playsinline></image>
-    </div>
-  </div>
-</section>
+<p align="center">
+  <img style="width: 80%" src="/teaser.gif" autoplay loop muted playsinline>
+</p>
 
 This repository is official implementation for the ECCV 2024 paper, [BEAF](). 
 The key idea of our BEAF benchmark is manipulating visual scene information and designing the metrics based on the model's answer changes along the scene changes.
