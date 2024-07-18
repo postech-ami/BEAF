@@ -20,9 +20,11 @@ The key idea of our BEAF benchmark is manipulating visual scene information and 
 \* [07/18] We released the BEAF dataset ver0, but it will be re-filtered and refined as ver1 soon!!
 
 - Original + Manipulated images: download from [here](https://drive.google.com/file/d/1BuJIpG_PFk0UG4Hf5ghlKmwOzlsDLgiS/view)
+- The original images are sourced from the [COCO dataset](https://cocodataset.org/#home)
 
 ### 2. Get your model's answer
 - Image name, question, GT answers, and additional metadata are in `./beaf_qna.json` file
+- The format and question of our BEAF is inspired by the [POPE dataset](https://github.com/RUCAIBox/POPE?tab=readme-ov-file)
 - The model output should be organized in a json file in the following format:
   ```bash
   [
@@ -73,7 +75,7 @@ python src/main.py --dataset cifar100-lt --data_dir data/cifar100/ --root_dir ex
 
 
 ## Citation
-If you find our code or paper helps, please consider citing:
+If you use BEAF in a research paper, please cite our work and related works as follows:
 ````BibTeX
 @inproceedings{yebin2024beaf,
   title     = {BEAF: Observing BEfore-AFter Changes to Evaluate Hallucination in Vision-language Models},
@@ -81,7 +83,21 @@ If you find our code or paper helps, please consider citing:
   booktitle = {European Conference on Computer Vision (ECCV)},
   year      = {2024},
 }
+
+@inproceedings{lin2014microsoft,
+  title     = {Microsoft coco: Common objects in context},
+  author    = {Lin, Tsung-Yi and Maire, Michael and Belongie, Serge and Hays, James and Perona, Pietro and Ramanan, Deva and Doll{'a}r, Piotr and Zitnick, C Lawrence},
+  booktitle = {European Conference on Computer Vision (ECCV)},
+  year      = {2014},
+}
+
+@inproceedings{Li-hallucination-2023,
+  title     = {Evaluating Object Hallucination in Large Vision-Language Models},
+  author    = {Yifan Li, Yifan Du, Kun Zhou, Jinpeng Wang, Wayne Xin Zhao and Ji-Rong Wen},
+  booktitle = {The 2023 Conference on Empirical Methods in Natural Language Processing},
+  year      = {2023},
+}
 ````
 
-## Acknowledgement
+## Acknowledgment
 This work was partly supported by Institute of Information & communications Technology Planning & Evaluation (IITP) grant funded by the Korea government(MSIT) (No.2021-0-02068, Artificial Intelligence Innovation Hub; No.2022-0-00124, Development of Artificial Intelligence Technology for Self-Improving Competency-Aware Learning Capabilities; No.RS-2019-II191906, Artificial Intelligence Graduate School Program(POSTECH))
