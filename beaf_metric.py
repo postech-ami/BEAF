@@ -68,23 +68,24 @@ def metric(orig_pairs, total_qna):
     sbp = cnt['SBp'] / 1727 * 100
     sbn = cnt['SBn'] / 1727 * 100
     id_ = cnt['ID'] / id_tot * 100
-    return acc, precision, recall, f1, tu, ig, sbp, sbn, id_
+    f1_tuid = 2*tu*(100-id_) / (tu + (100-id_))
+    return acc, precision, recall, f1, tu, ig, sbp, sbn, id_, f1_tuid
 
 def evaluate(args):
     beaf_qna = load_json(f'{args.qna_path}')
     model_answers = load_json(f'{args.model_answers}')
     orig_pairs, total_qna = answer_check(beaf_qna, model_answers)
-    ACC, Precision, Recall, F1, TU, IG, SBp, SBn, ID = metric(orig_pairs, total_qna)
+    ACC, Precision, Recall, F1_PR, TU, IG, SBp, SBn, ID, F1_TUID = metric(orig_pairs, total_qna)
 
-    print("============================================")
-    print(" Accuracy | Precision |  Recall  |    F1    ")
-    print("--------------------------------------------")
-    print(f"  {ACC:.2f}   |   {Precision:.2f}   |  {Recall:.2f}   |   {F1:.2f}")
-    print("============================================")
-    print("   TU   |   IG   |   SB+  |   SB-  |   ID  ")
-    print("--------------------------------------------")
-    print(f" {TU:.2f}  |  {IG:.2f}  |  {SBp:.2f} |  {SBn:.2f} |  {ID:.2f}")
-    print("============================================")
+    print("========================================================")
+    print("   Accuracy  |  Precision  |    Recall   |    F1(P,R) ")
+    print("--------------------------------------------------------")
+    print(f"    {ACC:.2f}    |    {Precision:.2f}    |    {Recall:.2f}    |    {F1_PR:.2f}")
+    print("=========================================================")
+    print("   TU   |   IG   |   SB+  |   SB-  |   ID   | F1(TU,ID)")
+    print("---------------------------------------------------------")
+    print(f" {TU:.2f}  |  {IG:.2f}  |  {SBp:.2f} |  {SBn:.2f} |  {ID:.2f}  |   {F1_TUID:.2f}")
+    print("=========================================================")
 
 
 if __name__ == "__main__":
