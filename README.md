@@ -1,7 +1,7 @@
 # BEAF: Observing Before-AFter Changes to Evaluate Hallucination in Vision-language Models (ECCV 2024)
 Authors: [Moon Ye-Bin*](https://sites.google.com/g.postech.edu/moon-ye-bin), [Nam Hyeon-Woo*](https://sites.google.com/view/namhyeonwoo/), Wonseok Choi, [Tae-Hyun Oh](https://ami.postech.ac.kr/members/tae-hyun-oh)
 
-### [Project Page](https://beafbench.github.io/) | [Dataset](https://drive.google.com/file/d/1BuJIpG_PFk0UG4Hf5ghlKmwOzlsDLgiS/view) | [Paper](https://arxiv.org/abs/2407.13442)
+### [Project Page](https://beafbench.github.io/) | [Dataset](https://drive.google.com/file/d/1BuJIpG_PFk0UG4Hf5ghlKmwOzlsDLgiS/view) | [YouTube](https://www.youtube.com/watch?v=ot1Nekz8yog) | [Paper](https://arxiv.org/abs/2407.13442) 
 
 <p align="center">
   <img style="width: 80%" src="/teaser_out.gif" autoplay loop muted playsinline>
