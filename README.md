@@ -1,7 +1,7 @@
 # BEAF: Observing Before-AFter Changes to Evaluate Hallucination in Vision-language Models (ECCV 2024)
 Authors: [Moon Ye-Bin*](https://sites.google.com/g.postech.edu/moon-ye-bin), [Nam Hyeon-Woo*](https://sites.google.com/view/namhyeonwoo/), Wonseok Choi, [Tae-Hyun Oh](https://ami.postech.ac.kr/members/tae-hyun-oh)
 
-### [Project Page](https://beafbench.github.io/) | [Dataset](https://drive.google.com/file/d/1BuJIpG_PFk0UG4Hf5ghlKmwOzlsDLgiS/view) | [Paper](https://arxiv.org/abs/2407.13442)
+### [Project Page](https://beafbench.github.io/) | [Dataset](https://drive.google.com/file/d/1Xx7j8Hz8QX3Fl_hpSBet6r15njhwCgeR/view) | [Paper](https://arxiv.org/abs/2407.13442)
 
 <p align="center">
   <img style="width: 80%" src="/teaser_out.gif" autoplay loop muted playsinline>
@@ -18,9 +18,10 @@ The key idea of our BEAF benchmark is manipulating visual scene information and 
 
 ## Evaluation 
 ### 1. BEAF dataset download
-\* [07/18] We released the BEAF dataset ver0, but it will be re-filtered and refined as ver1 soon!!
+\* [07/18] We released the BEAF dataset ver0, but it will be re-filtered and refined as ver1 soon!! \
+\* [10/15] We updated the BEAF dataset ver1. The QnA JSON file is also updated. 
 
-- Original + Manipulated images: download from [here](https://drive.google.com/file/d/1BuJIpG_PFk0UG4Hf5ghlKmwOzlsDLgiS/view)
+- Original + Manipulated images: download from [here](https://drive.google.com/file/d/1Xx7j8Hz8QX3Fl_hpSBet6r15njhwCgeR/view)
 - The original images are sourced from the [COCO dataset](https://cocodataset.org/#home)
 
 ### 2. Get your model's answer
@@ -32,7 +33,7 @@ The key idea of our BEAF benchmark is manipulating visual scene information and 
     {"id": 0, "answer": "No."}, 
     {"id": 1, "answer": "Yes."}, 
     ... 
-    {"id": 26117, "answer": "No."}
+    {"id": 26063, "answer": "No."}
   ]
   ```
 - Please refer to `answer_gpt4o.json` as an example of a model answer.
