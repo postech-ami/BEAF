@@ -19,7 +19,8 @@ The key idea of our BEAF benchmark is manipulating visual scene information and 
 ## Evaluation 
 ### 1. BEAF dataset download
 \* [07/18] We released the BEAF dataset ver0, but it will be re-filtered and refined as ver1 soon!! \
-\* [10/15] We updated the BEAF dataset ver1. The QnA JSON file is also updated. 
+\* [10/15] We updated the BEAF dataset ver1. The QnA JSON file is also updated. Note that the number of images and questions is different from the ver0 (the value in the paper). 
+In ver1, the number of images is 2,225, and the number of image-question pairs is 26,064.
 
 - Original + Manipulated images: download from [here](https://drive.google.com/file/d/1Xx7j8Hz8QX3Fl_hpSBet6r15njhwCgeR/view)
 - The original images are sourced from the [COCO dataset](https://cocodataset.org/#home)
